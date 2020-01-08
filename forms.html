@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="array.css"> -->
+	<style type="text/css">
+		.container{
+		border:1px solid black;
+		border-radius: 5px;
+		padding:10px 10px;
+		margin:15px 15px;
+		}
+		.text-primary{
+			text-align:center;
+		}
+/*
+		table{
+			display: none;
+		}*/
+
+
+		/*th{
+			position: fixed;
+		}*/
+	</style>
+</head>
+<body>
+  <div class="container">
+  	<h1 class="text-primary contact" >CONTACT FORM</h1>
+  	<form id="form">
+  	<div class="form-group">
+  		<label for="email">Email Address</label>
+  		<input type="Email" class="form-control inputemail " id="email" placeholder="test1@email.com">
+  	</div>
+  	<div class="form-group">
+  		<label for="number">Phone Number</label>
+  		<input type="number" class="form-control inputnumber" id="number" placeholder="Enter Your Phone Number">
+  	</div>
+  	<div class="form-group">
+  		<label for="text">Address</label>
+  		<textarea placeholder="Enter Your Address"
+  		class="form-control inputaddress" id="text"></textarea>
+  	</div>
+  	<button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+
+  <table class="table table-striped table-bordered" id="table">
+  	<thead class="thead-dark">
+  		<tr>
+  			<th scope="col">Name</th>
+  			<th scope="col">Number</th>
+  			<th scope="col">Address</th>
+  			<th scope="col"></th>
+  		</tr>
+  	</thead>
+  	<tbody id="body">
+  		<tr>
+  			<td>Jane@yahoo.com</td>
+  			<td>12345565</td>
+  			<td>Lagos</td>
+  			<td><button class="btn btn-danger delete">Delete</button></td>
+  		</tr>
+  	
+  	</tbody>
+  </table>
+ <script type="text/javascript" src="solution.js"></script>
+
+</body>
+</html>
