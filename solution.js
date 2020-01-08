@@ -1,7 +1,4 @@
-
-
-
-
+//SIMPLE CONTACT FORM
 let forms = document.querySelector('#form');
 let table = document.querySelector('#table');
 let tr = document.querySelector('tr');
@@ -33,18 +30,17 @@ let cell3 = row.insertCell(2);
 let cell4 = row.insertCell(3)
 
 
-cell1.appendChild(document.createTextNode(inputemail));
-cell2.appendChild(document.createTextNode(inputnumber));
-cell3.appendChild(document.createTextNode(inputaddress));
+cell1.innerHTML = inputemail.value;
+cell2.innerHTML = inputnumber.value;
+cell3.innerHTML = inputaddress.value;
 cell4.appendChild(deleteBtn);
 
 
+inputemail.value = " ";
+inputnumber.value = " ";
+inputaddress.value = " ";
+	
 
-
-// cell1.innerHTML = inputemail.value
-// cell2.innerHTML = inputnumber.value;
-// cell3.innerHTML = inputaddress.value;
-// cell4.innerHTML = deleteBtn
 
 
 
